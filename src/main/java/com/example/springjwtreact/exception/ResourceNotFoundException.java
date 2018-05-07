@@ -8,7 +8,11 @@ import lombok.Data;
 @Data
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException {
-    private String resourceName;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String resourceName;
     private String fieldName;
     private Object fieldValue;
 
